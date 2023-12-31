@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Exo+2:ital,wght@0,400;1,300&family=Space+Grotesk&display=swap');
+
+body {
+    background-color: rgb(101, 160, 101);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    height: 300px;
+    width: 85%;
+    max-width: 500px;
+    background-color: white;
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow:
+        inset 0 -5em 3em rgba(200, 205, 200, 0.3),
+        0 0 0 rgb(255, 253, 253),
+        0em 0.5em 1.3em rgba(200, 0, 0, 0.6);
+}
+
+.main {
+    text-align: center;
+    position: relative;
+
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+#puote {
+    text-align: center;
+}
+
+#author {
+    font-size: 0.9rem;
+}
+
+.author_box{
+    height: 20px;
+    width: 150px;
+    text-align: left;
+    position: relative;
+   margin-left: 45%;
+   margin-top: 15px;
+}
+
+#author::before {
+    content: '';
+    width: 40px;         
+    background:black;
+    height: 1px;
+    position: absolute;
+    bottom: 50%;
+    left: -40px;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#quote {
+    display: inline;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+#twitter {
+    font-size: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#next_quote {
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid rgb(164, 152, 152);
+    background-color: #02bff2;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#next_quote:hover {
+    background-color: white;
+    color: black;
+}
+
+#next_quote:active {
+    background-color: #dddddd;
+    height: 38px;
+    width: 110px;
+}
+
+#author span{
+    width: 50px;
+    height: 2px;
+    background: #02bff2;
+    display: inline-block;
+}
